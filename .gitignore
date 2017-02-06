@@ -1,0 +1,7 @@
+/.apt_generated/
+*.class
+bin/
+*.apk
+gen/
+.settings/
+proguard/

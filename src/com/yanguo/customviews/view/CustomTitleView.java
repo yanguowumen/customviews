@@ -96,6 +96,7 @@ public class CustomTitleView extends View{
 		switch (widthMode) {
 		case MeasureSpec.AT_MOST:
 			width = getPaddingLeft() + getPaddingRight() + mTitleTextBound.width() + 2 * mTitleTextBound.left;
+			widthSize = Math.min(widthSize, width);
 			break;
 		case MeasureSpec.EXACTLY:
 			width = widthSize;

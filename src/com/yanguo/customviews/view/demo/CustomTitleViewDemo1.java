@@ -12,6 +12,7 @@ import com.yanguo.customviews.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
 
 /** 
 * @ClassName: CustomTitleViewDemo1 
@@ -27,6 +28,5 @@ public class CustomTitleViewDemo1 extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.customtitleview_demo1);
 	}
-	
 	
 }

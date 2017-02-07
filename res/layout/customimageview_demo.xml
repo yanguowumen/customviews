@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.yanguo.customviews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.yanguo.customviews.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:image="@drawable/ic_launcher"
+        custom:imageScaleType="fill"
+        custom:titleText="hello world"
+        custom:titleTextColor="#000000"
+        custom:titleTextSize="16sp" />
+
+    <com.yanguo.customviews.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:image="@drawable/ic_launcher"
+        custom:imageScaleType="fill"
+        custom:titleText="hello world"
+        custom:titleTextColor="#000000"
+        custom:titleTextSize="36sp" />
+
+    <com.yanguo.customviews.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:image="@drawable/girl"
+        custom:imageScaleType="fill"
+        custom:titleText="hello world"
+        custom:titleTextColor="#000000"
+        custom:titleTextSize="56sp" />
+    
+     <com.yanguo.customviews.view.CustomImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:image="@drawable/girl"
+        custom:imageScaleType="fill"
+        custom:titleText="hello world"
+        custom:titleTextColor="#000000"
+        custom:titleTextSize="76sp" />
+
+</LinearLayout>

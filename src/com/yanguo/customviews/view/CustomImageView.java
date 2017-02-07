@@ -22,8 +22,10 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+import android.widget.TextView;
 
 /** 
 * @ClassName: CustomImageView 
@@ -90,7 +92,7 @@ public class CustomImageView extends View{
 	
 	@Override
 	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+		Log.e("CustomImageView", "onMeasure");
 		int widthMode = MeasureSpec.getMode(widthMeasureSpec);
 		int heightMode = MeasureSpec.getMode(heightMeasureSpec);
 		
@@ -98,6 +100,7 @@ public class CustomImageView extends View{
 		int heigheSize = MeasureSpec.getSize(heightMeasureSpec);
 		int width = 0, height = 0;
 		switch (widthMode) {
+		case MeasureSpec.UNSPECIFIED://兼容HScrollView
 		case MeasureSpec.AT_MOST:
 			int desireWidthByText = getPaddingLeft() + getPaddingRight() + 
 					(mTextBound.width() + 2 * mTextBound.left);
@@ -107,20 +110,21 @@ public class CustomImageView extends View{
 			break;
 		case MeasureSpec.EXACTLY:
 			width = widthSize;
+			break;
 		}
 		
 		switch (heightMode) {
+		case MeasureSpec.UNSPECIFIED://兼容ScrollView
 		case MeasureSpec.AT_MOST:
 			int textHeight = mTextBound.height() - mTextBound.top / 2;
 			int imageHeight = mImage.getHeight();
-			height = textHeight + imageHeight;
+			height = textHeight + imageHeight + getPaddingBottom() + getPaddingTop();
 			Math.min(height, heigheSize);
 			break;
 		case MeasureSpec.EXACTLY:
 			height = heigheSize;
-		default:
-			break;
-		}
+		};
+		Log.e("CustomImageView", "height ： " + height);
 		setMeasuredDimension(width, height);
 	}
 	

@@ -82,7 +82,7 @@ public class CustomImageView extends View{
 				break;
 			}
 		}
-		
+		a.recycle();
 		if(mPaint == null) mPaint = new Paint();
 		mTextBound = new Rect();
 		mPaint.setTextSize(mTitleTextSize);

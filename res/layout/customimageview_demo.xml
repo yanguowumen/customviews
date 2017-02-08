@@ -53,6 +53,17 @@
             custom:titleText="hello world"
             custom:titleTextColor="#000000"
             custom:titleTextSize="76sp" />
+        
+        <com.yanguo.customviews.view.CircleProgressView
+            android:layout_gravity="center_horizontal"
+            custom:progress_radius="40dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <com.yanguo.customviews.view.CustomVolumControlBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+            
     </LinearLayout>
 
 </ScrollView>

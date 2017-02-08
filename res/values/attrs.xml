@@ -21,4 +21,28 @@
         <attr name = "image"/>
         <attr name = "imageScaleType"/>
     </declare-styleable>
+    
+    <attr name = "firstColor" format = "reference|color"/>
+    <attr name = "secondColor" format = "reference|color"/>
+    <attr name = "circle_width" format = "reference|dimension"/>
+    <attr name = "circle_duration" format = "reference|integer"/>
+    <attr name = "progress_count" format = "reference|integer"/>
+    <attr name = "progress_radius" format = "reference|dimension"/>
+    
+    <declare-styleable name = "CircleProgressView">
+        <attr name = "firstColor"/>
+        <attr name = "secondColor"/>
+        <attr name ="circle_width"/>
+        <attr name = "circle_duration"/>
+        <attr name = "progress_count"/>
+        <attr name = "progress_radius"/>
+    </declare-styleable>
+    <attr name = "dotcount" format = "reference|integer"/>
+    <declare-styleable name = "CustomVolumControlBar">
+        <attr name = "firstColor"/>
+        <attr name = "secondColor"/>
+        <attr name ="circle_width"/>
+        <attr name = "dotcount"/>
+        <attr name = "image"/>
+    </declare-styleable>
 </resources>

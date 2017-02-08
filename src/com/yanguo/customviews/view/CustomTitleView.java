@@ -75,7 +75,6 @@ public class CustomTitleView extends View{
 			}
 		}
 		a.recycle();
-		
 		mPaint = new Paint();
 		mPaint.setTextSize(mTitleTextSize);
 		mTitleTextBound = new Rect();

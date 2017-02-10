@@ -3,7 +3,8 @@
     xmlns:custom="http://schemas.android.com/apk/res/com.yanguo.customviews"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,6 +62,7 @@
             android:layout_height="wrap_content"/>
         
         <com.yanguo.customviews.view.CustomVolumControlBar
+            android:id="@+id/volumeControlBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
             

@@ -157,7 +157,7 @@ public class CircleProgressView extends View{
 		mPaint.setStyle(Style.STROKE);
 		mPaint.setStrokeWidth(mCircleWidth);
 		mPaint.setAntiAlias(true);
-		int radius = mProgressRadius;;
+		int radius = mProgressRadius - mCircleWidth /2;;
 		int centerX = getPaddingLeft() + (getWidth()- getPaddingLeft() - getPaddingRight()) / 2 ;
 		int centerY = getPaddingTop() + (getHeight() - getPaddingTop() - getPaddingBottom()) /2;
 		if(round % 2 == 1){
